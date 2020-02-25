@@ -31,7 +31,7 @@ main {
 }
 
 .card {
-  grid-column-end: span 4;
+  grid-column-end: span 3;
   display: flex;
   flex-direction: column;
   background-color: #39393b;
@@ -58,27 +58,44 @@ main {
   transform: translate(-50%, -50%);
 }
 
-.card__content {
+.card-content {
   padding: 20px;
 }
 
-.card__title {
+.card-title {
   margin-bottom: 20px;
 }
 
-.card__info {
+.card-info {
   display: flex;
   align-self: end;
   align-items: center;
 }
 
-.card__price {
+.card-price {
   margin-left: auto;
   padding: 5px 20px;
   background-color: #303032;
   border-radius: 20px;
 }
 
+.card-icons{
+  margin-left: auto;
+}
+
+.fa-edit{
+  color:#ecf0f1;
+}
+.fa-trash{
+  padding: 5px 20px;
+  color:#f14780;
+}
+
+@media only screen and (max-width: 1200px) {
+  .card {
+    grid-column-end: span 4;
+  }
+}
 @media only screen and (max-width: 1000px) {
   .card {
     grid-column-end: span 6;
